@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url("../images/landingpage.png");
+  background-size: cover;
+  height: 100%;
+  /* width: 100%; */
+}
+.inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.left {
+  display: grid;
+  place-items: center;
+}
+.left > img {
+  width: 500px;
+  height: 500px;
+}
+
+.left > h1 {
+  margin-top: 100px;
+  font-size: 60px;
+  font-family: "Roboto Slab", serif;
+  background: linear-gradient(to right, #0e0f08 0%, #5a4d4b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.right {
+  display: grid;
+  place-items: center;
+}
+.right > img {
+  width: 600px;
+}
+
+.button {
+  height: 70px;
+  width: 130px;
+  margin: 20px;
+  margin-top: 0;
+  background-color: transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  background: linear-gradient(to right, #d2d8ad 0%, #e76ea7 100%);
+}
+.button:hover {
+  background: linear-gradient(to right, #e76ea7 0%, #d2d8ad 100%);
+  border: none;
+}
+@media only screen and (max-width: 1100px) {
+  .container {
+    height: 100vh;
+  }
+  .left > img {
+    max-width: 400px;
+    object-fit: contain;
+  }
+  .left > h1 {
+    margin-top: 60px;
+  }
+  .right > img {
+    width: 400px;
+  }
+  .inner-container {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .container {
+    height: 100%;
+  }
+  .left > img {
+    max-width: 400px;
+    object-fit: contain;
+  }
+  .left > h1 {
+    margin-top: 60px;
+  }
+  .right > img {
+    width: 400px;
+  }
+  .inner-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    height: 100%;
+  }
+  .left > img {
+    max-width: 300px;
+    object-fit: contain;
+  }
+  .left > h1 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .right > img {
+    width: 300px;
+    object-fit: contain;
+  }
+  .button {
+    height: 50px;
+    width: 100px;
+  }
+
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
